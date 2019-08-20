@@ -6,7 +6,7 @@ import { CounterService } from '../child/counter.service';
   selector: 'first-feature',
   templateUrl: './first-feature.component.html',
   styleUrls: [],
-  providers: [CounterService]
+  providers: []
 })
 export class FirstFeatureComponent implements OnInit {  
 

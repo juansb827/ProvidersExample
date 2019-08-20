@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Optional, SkipSelf } from '@angular/core';
 
 import { ChildComponent } from './child.component';
 import { CounterService } from './counter.service';
@@ -25,6 +25,14 @@ export class ChildModule {
   //   return {
   //     ngModule: ChildModule,
   //     providers: []
+  //   }
+  // }
+
+
+  // constructor (@Optional() @SkipSelf() parentModule: ChildModule) {
+  //   if (parentModule) {
+  //     throw new Error(
+  //       'ChildModule is already loaded. Import it in the AppModule only');
   //   }
   // }
 }

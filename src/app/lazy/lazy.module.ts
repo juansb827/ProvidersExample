@@ -11,7 +11,6 @@ import { CounterService } from '../child/counter.service';
 @NgModule({
   declarations: [LazyComponent],
   imports: [
-   
     CommonModule,
     RouterModule.forChild([{
       path: '', component: LazyComponent
